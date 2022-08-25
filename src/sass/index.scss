@@ -1,2 +1,21 @@
-@import './common';
-@import './example';
+
+
+
+
+// Bases
+@import '../sass/base/container';
+
+@import '../sass/utils/mixin';
+@import '../sass/utils/placeholders';
+@import '../sass/utils/variables';
+
+// Index.html
+@import '../sass/components/header';
+@import '../sass/components/hero';
+@import '../sass/components/offerings';
+@import '../sass/components/favorites';
+@import '../sass/components/feedback';
+@import '../sass/components/subscribe';
+@import '../sass/components/footer';
+
+
