@@ -1,9 +1,68 @@
 // .hero {
 //   display: flex;
+//   width: 280px;
+//   height: 259px;
+//   margin-left: 20px;
+//   margin-right: 20px;
+//   margin-bottom: 100px;
+//   align-items: center;
+//   text-align: center;
+
+//   @media screen and (min-width: 768px) {
+//     width: 704px;
+//     height: 409px;
+//     margin-left: 32px;
+//     margin-right: 32px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     width: 1200px;
+//     height: 608px;
+//     margin-left: 16px;
+//     margin-right: 16px;
+//   }
 // }
 
 // .hero__motto {
 //   margin-right: 54px;
+// }
+
+// .hero__title {
+//   font-family: 'Roboto';
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 28px;
+//   line-height: 33px;
+
+//   color: #2c2c2c;
+
+//   @media screen and (min-width: 768px) {
+//     font-size: 42px;
+//     line-height: 50px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     font-size: 48px;
+//     line-height: 58px;
+//   }
+// }
+
+// .hero__txt {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 21px;
+
+//   color: #2c2c2c;
+
+//   @media screen and (min-width: 768px) {
+//     font-size: 14px;
+//     line-height: 21px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     font-size: 16px;
+//     line-height: 24px;
+//   }
 // }
 
 // .hero__btn {
@@ -14,12 +73,26 @@
 //   height: 32px;
 // }
 
-// .food-photo {
-//   object-fit: contain;
+// .swiper-slide__photo {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+//   height: 100%;
+//   text-align: center;
+//   vertical-align: middle;
+//   object-position: center;
+
+//   @media screen and (min-width: 768px) {
+//     height: 409px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     height: 608px;
+//   }
 // }
 
 // .swiper {
-//   max-width: 606px;
+//   max-width: 608px;
 //   border-radius: 141px;
 //   margin: auto;
 //   display: flex;
@@ -29,17 +102,33 @@
 //   }
 
 //   @media screen and (min-width: 1200px) {
-//     width: 100%;
-//     height: 528px;
 //     border-radius: 269px;
 //   }
 // }
 
-// .swiper-slide {
-//   background-image: url(../images/hero/big-circle@1x.jpg);
+// .swiper-wrapper {
+//   height: 580px;
 //   width: 580px;
-//   background-position: center;
-//   background-repeat: no-repeat;
+// }
+
+// .swiper-slide {
+//   text-align: center;
+//   overflow: visible;
+
+//   @media screen and (min-width: 768px) {
+//     background-image: url(../images/hero/small-circle@1x.jpg);
+//     width: 320px;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     background-image: url(../images/hero/big-circle@1x.jpg),
+//       url(../images/hero/big-circle@2x.jpg);
+//     width: 580px;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//   }
 // }
 
 // .swiper-button-prev,
@@ -48,4 +137,28 @@
 //   border-radius: 4px;
 //   width: 29px;
 //   height: 16px;
+// }
+
+// .swiper .swiper-button-prev,
+// .swiper .swiper-button-next {
+//   --swiper-navigation-size: 29px;
+//   width: calc(var(--swiper-navigation-size) / 29 * 16);
+//   height: var(--swiper-navigation-size);
+//   color: var(--swiper-navigation-color, #2c2c2c);
+
+//   background: #ffffff;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+//   border-radius: 18px;
+
+//   @media screen and (max-width: 1199px) {
+//     .swiper-button-prev,
+//     .swiper-rtl .swiper-button-next {
+//       right: 30px;
+//     }
+//   }
+
+//   &:hover,
+//   &:focus {
+//     color: #7eb101;
+//   }
 // }
