@@ -3,12 +3,14 @@
 
 
 // Bases
-@import '../sass/base/body';
-@import '../sass/base/container';
-
 @import '../sass/utils/mixin';
 @import '../sass/utils/placeholders';
 @import '../sass/utils/variables';
+
+@import '../sass/base/body';
+@import '../sass/base/container';
+
+
 
 // Index.html
 @import '../sass/components/header';
