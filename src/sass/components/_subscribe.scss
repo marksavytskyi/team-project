@@ -1,0 +1,66 @@
+.subscribe {
+  &__container {
+    margin-bottom: 60px;
+  }
+  &__background {
+    background-image: url(../images/subscribe/banan@1x-161-mob.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: block;
+    height: 78px;
+    margin-bottom: 17px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+  &__descr {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    max-width: 262px;
+    margin-bottom: 40px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 394px;
+  }
+  &__input {
+    padding: 12px 0px 12px 11px;
+    font-size: 12px;
+    line-height: 150%;
+    color: $color-gray-dark;
+    border: 0.854167px solid #ffe550;
+    border-radius: 30px;
+    outline: none;
+    &::placeholder {
+      color: $color-gray-dark;
+    }
+    &:not(:placeholder-shown):valid {
+      border: 0.854167px solid #7eb101;
+    }
+    &:invalid {
+      border: 0.854167px solid #ff705d;
+    }
+  }
+  &__btn {
+    font-size: 14px;
+    line-height: 150%;
+    border: 0.854167px solid #7eb101;
+    border-radius: 30px;
+    padding: 10px 22px 11px 22px;
+    max-width: 106px;
+    margin-left: auto;
+    background-color: $color-white;
+    // background-color: $color-green-light;
+    // border: none;
+    &:active{
+       background-color: $color-yellow; 
+    }
+  }
+}
