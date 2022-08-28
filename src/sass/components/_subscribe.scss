@@ -1,6 +1,6 @@
 .subscribe {
   &__container {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
   &__background {
     background-image: url(../images/subscribe/banan@1x-161-mob.png);
@@ -14,7 +14,7 @@
   &__title {
     font-weight: 700;
     font-size: 28px;
-    line-height: 120%;
+    line-height: calc(34 / 28);
     max-width: 280px;
     margin-bottom: 20px;
   }
@@ -27,40 +27,38 @@
   &__form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
     max-width: 394px;
   }
   &__input {
-    padding: 12px 0px 12px 11px;
+    margin-bottom: 20px;
+    padding: 12px 0px 12px 12px;
     font-size: 12px;
-    line-height: 150%;
-    color: $color-gray-dark;
-    border: 0.854167px solid #ffe550;
+    line-height: calc(18 / 12);
+    color: $color-black-primary;
+    border: 0.854167px solid $color-yellow;
     border-radius: 30px;
     outline: none;
     &::placeholder {
       color: $color-gray-dark;
     }
     &:not(:placeholder-shown):valid {
-      border: 0.854167px solid #7eb101;
+      border-color: $color-green-dark;
     }
     &:invalid {
-      border: 0.854167px solid #ff705d;
+      border-color: $color-warning;
     }
   }
   &__btn {
     font-size: 14px;
-    line-height: 150%;
-    border: 0.854167px solid #7eb101;
+    line-height: calc(21 / 14);
     border-radius: 30px;
-    padding: 10px 22px 11px 22px;
-    max-width: 106px;
+    height: 42px;
+    width: 106px;
     margin-left: auto;
-    background-color: $color-white;
-    // background-color: $color-green-light;
-    // border: none;
-    &:active{
-       background-color: $color-yellow; 
-    }
+    background-color: $color-green-light;
+    border: none;
+    // &:active {
+    //   background-color: $color-yellow;
+    // }
   }
 }
