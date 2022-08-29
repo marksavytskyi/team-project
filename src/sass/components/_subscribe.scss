@@ -21,7 +21,6 @@
   &__descr {
     font-size: 14px;
     line-height: calc(16 / 14);
-    max-width: 262px;
     margin-bottom: 40px;
   }
   &__form {
@@ -50,6 +49,7 @@
     }
     &:not(:placeholder-shown):invalid + .subscribe__warning {
       display: flex;
+      margin-bottom: 1px;
     }
   }
 
@@ -69,8 +69,7 @@
     line-height: calc(21 / 14);
     border-radius: 30px;
     padding: 11px 22px;
-    // height: 42px;
-    // width: 106px;
+    font-weight: 500px;
     margin-left: auto;
     background-color: $color-green-light;
     border: none;
