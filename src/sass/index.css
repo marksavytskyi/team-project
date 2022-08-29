@@ -67,4 +67,86 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
+}
+
+.offering {
+  background-image: url(/src/images/offerings/Rectangle\ 694.svg);
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.subscribe__container {
+  padding-bottom: 60px;
+}
+.subscribe__background {
+  background-image: url(../images/subscribe/banan@1x-161-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: block;
+  height: 78px;
+  margin-bottom: 17px;
+}
+.subscribe__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2142857143;
+  max-width: 280px;
+  margin-bottom: 20px;
+}
+.subscribe__descr {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  margin-bottom: 40px;
+}
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+}
+.subscribe__input {
+  margin-bottom: 20px;
+  padding: 12px 0px 12px 12px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #2C2C2C;
+  border: 0.854167px solid #FFE550;
+  border-radius: 30px;
+  outline: none;
+}
+.subscribe__input::placeholder {
+  color: #505050;
+}
+.subscribe__input:not(:placeholder-shown):valid {
+  border-color: #7EB101;
+}
+.subscribe__input:not(:placeholder-shown):invalid {
+  border-color: #FF705D;
+  margin-bottom: 4px;
+}
+.subscribe__input:not(:placeholder-shown):invalid + .subscribe__warning {
+  display: flex;
+  margin-bottom: 1px;
+}
+.subscribe__warning {
+  display: none;
+}
+.subscribe__warningtxt {
+  font-size: 10px;
+  line-height: 1.5;
+  color: #FF705D;
+  user-select: none;
+  margin-left: 4px;
+}
+.subscribe__btn {
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 30px;
+  padding: 11px 22px;
+  font-weight: 500px;
+  margin-left: auto;
+  background-color: #BBF330;
+  border: none;
+}
+.subscribe__btn:hover, .subscribe__btn:focus {
+  background-color: #B5FF00;
 }/*# sourceMappingURL=index.css.map */
