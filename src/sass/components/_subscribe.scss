@@ -1,0 +1,82 @@
+.subscribe {
+  &__container {
+    padding-bottom: 60px;
+  }
+  &__background {
+    background-image: url(../images/subscribe/banan@1x-161-mob.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: block;
+    height: 78px;
+    margin-bottom: 17px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+  &__descr {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    margin-bottom: 40px;
+    max-width: 280px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    // max-width: 394px;
+  }
+  &__input {
+    margin-bottom: 20px;
+    padding: 12px 0px 12px 12px;
+    font-size: 12px;
+    line-height: calc(18 / 12);
+    color: $color-black-primary;
+    border: 0.854167px solid $color-yellow;
+    border-radius: 30px;
+    outline: none;
+    &::placeholder {
+      color: $color-gray-dark;
+    }
+    &:not(:placeholder-shown):valid {
+      border-color: $color-green-dark;
+    }
+    &:not(:placeholder-shown):invalid {
+      border-color: $color-warning;
+      margin-bottom: 4px;
+    }
+    &:not(:placeholder-shown):invalid + .subscribe__warning {
+      display: flex;
+      margin-bottom: 1px;
+    }
+  }
+
+  &__warning {
+    display: none;
+  }
+  &__warningtxt {
+    font-size: 10px;
+    line-height: calc(15 / 10);
+    color: $color-warning;
+    user-select: none;
+    margin-left: 4px;
+  }
+
+  &__btn {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+    border-radius: 30px;
+    padding: 11px 22px;
+    font-weight: 500px;
+    margin-left: auto;
+    background-color: $color-green-light;
+    border: none;
+    &:hover,
+    &:focus {
+      background-color: $color-green-light-hover;
+    }
+  }
+}
