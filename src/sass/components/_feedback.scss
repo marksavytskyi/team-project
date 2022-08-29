@@ -1,8 +1,12 @@
 .feedback {
   background-color: $color-white;
-  background-position: center;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 100% 100%;
 
   background-image: url(../images/feedback/background@1x-320-mob.png);
   @media (min-device-pixel-ratio: 2),
@@ -36,6 +40,13 @@
     padding-bottom: 60px;
   }
 
+  &__container--direction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+
   &__title {
     font-size: 28px;
     line-height: calc(33 / 28);
@@ -45,20 +56,76 @@
   &__descr {
     font-size: 14px;
     line-height: calc(16 / 14);
-    max-width: 262px;
-    margin-bottom: 32px;
+    max-width: 280px;
+    // margin-bottom: 32px;
   }
   &__list {
-    display: inline-flex;
+    display: flex;
     gap: 24px;
     flex-direction: column;
     align-items: center;
   }
 
   &__item {
-    display: inline-flex;
+    // display: inline-flex;
     flex-direction: column;
     max-width: 280px;
-    background-color: #ffffff;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-radius: 0px 30px 30px 30px;
+    background-color: $color-white;
+  }
+
+  &__icon {
+    display: flex;
+    padding-top: 8px;
+    padding-bottom: 28px;
+  }
+
+  &__customerdescr {
+    padding-bottom: 40px;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    font-weight: 700;
+  }
+
+  &__customers {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+    // border-right: 0.854167px solid $color-green-dark;
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 52px;
+      height: 0.854167px;
+      background-color: $color-green-dark;
+      transform: rotate(-90deg);
+    }
+  }
+
+  &__box {
+    // display: inline-flex;
+    // flex-direction: column;
+    margin-left: 16px;
+
+    // &::after {
+    //   content: '';
+    //   display: inline-block;
+    //   width: 52px;
+    //   height: 0.854167px;
+    //   background-color: $color-green-dark;
+    //   transform:rotate(-90deg);
+    // }
+    // border-right: 0.854167px solid $color-green-dark;
+    // padding-right: 14px;
+  }
+
+  &__customername {
+    font-size: 14px;
+    line-height: calc(19 / 16);
+    font-weight: 500;
+    margin-bottom: 2px;
   }
 }
