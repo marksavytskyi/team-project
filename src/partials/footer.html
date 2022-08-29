@@ -43,13 +43,17 @@
                   placeholder="Enter your email"
                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
                 />
-                <!-- <svg class="footer__warning" aria-label="Food sta" width="12" height="12">
-                    <use
-                      href="./images/logo-sprite.svg#icon-warning"
-                                   ></use> -->
-                <span class="form__error">
-                  Not a valid email address (example@email.com)</span
-                >
+                <div class="subscription__error">
+                  <svg
+                    aria-label="Food sta"
+                    width="12"
+                    height="12"
+                    class="subscription__icon"
+                  >
+                    <use href="./images/logo-sprite.svg#icon-warning"></use>
+                  </svg>
+                  <span> Not a valid email address (example@email.com)</span>
+                </div>
               </div>
               <button type="submit" class="subscription__btn">Subscribe</button>
             </div>
