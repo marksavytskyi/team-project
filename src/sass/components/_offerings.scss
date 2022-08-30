@@ -38,6 +38,14 @@
   background-repeat: no-repeat;
   background-position: top center;
 
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/offerings/apple-mob.png);
+    background-image: url(/src/images/offerings/Apple-midl.png);
+    background-image: url(/src/images/offerings/Apple-small.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
   // background-repeat: no-repeat;
   // background-position: center;
   // background-size: 201px 255px 128px;

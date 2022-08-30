@@ -1,10 +1,16 @@
-.hero {
+.hero .container {
   display: flex;
-  //   margin-bottom: -161px;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    min-width: 704px;
+  }
 }
 
 .hero__info {
   max-width: 440px;
+  margin-right: 54px;
 
   @media screen and (min-width: 768px) {
     max-width: 537px;
@@ -70,6 +76,8 @@
   }
 }
 
-.hero .swiper-slide {
-  object-fit: contain;
+.hero .swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
