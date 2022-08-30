@@ -33,7 +33,30 @@
   }
 }
 
+.offering .apple {
+  background-image: url(/src/images/offerings/apple-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: 201px 255px 128px;
+  // background-image: url(/src/images/offerings/applemob@1x.png),
+  //   url(/src/images/offerings/apple-bg-mob@1x.png),
+  //   url(/src/images/offerings/apple-shad-mob@1x.png);
+
+  // @media (min-device-pixel-ratio: 2),
+  //   (-webkit-min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(/src/images/offerings/applemob@2x.png),
+  //     url(/src/images/offerings/apple-bg-mob@2x.png),
+  //     url(/src/images/offerings/apple-shad-mob@2x.png);
+  // }
+}
+
 .offering__title {
+  padding-top: 410px;
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
@@ -85,6 +108,30 @@
   }
 }
 
+.icon-rocket {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-image: url(/src/images/logo-sprite.svg#icon-rocket);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
+  margin-top: 28px;
+}
+
+.icon-touch {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-image: url(/src/images/logo-sprite.svg#icon-rocket);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
+  margin-top: 28px;
+}
+
 .offering__btn {
   background-color: #ffffff;
   width: 106px;
@@ -96,6 +143,8 @@
   font-size: 13px;
   line-height: 20px;
   margin-right: 24px;
+  margin-top: 28px;
+  margin-bottom: 60px;
 }
 
 // .link__text {

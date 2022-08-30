@@ -3,19 +3,34 @@
   //   margin-bottom: -161px;
 }
 
+.hero__info {
+  max-width: 440px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 537px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 502px;
+  }
+}
+
 .hero__title {
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
+  margin-bottom: 28px;
 
   @media screen and (min-width: 768px) {
     font-size: 42px;
     line-height: 1.2;
+    margin-bottom: 44px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 48px;
     line-height: 1.2;
+    margin-bottom: 28px;
   }
 }
 
@@ -40,72 +55,21 @@
   height: 32px;
   border-radius: 30px;
   border: none;
+  margin-top: 28px;
 
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
 }
 
-// .swiper .swiper-slide {
-//   background-image: url(../images/hero/small-circle@1x.jpg);
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   max-width: 480px;
-//   height: 400px;
-//   margin: 0 auto;
+.hero .swiper {
+  margin-left: auto;
 
-//   @media (min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)
-//       ),
-//       url(../images/hero/small-circle@2x.jpg);
-//   }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
 
-//   @media screen and (min-width: 768px) {
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)
-//       ),
-//       url(../images/hero/small-circle@1x.jpg);
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//           to right,
-//           rgba(47, 48, 58, 0.4),
-//           rgba(47, 48, 58, 0.4)
-//         ),
-//         url(../images/hero/small-circle@2x.jpg);
-//     }
-//     max-width: 768px;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     max-width: 1600px;
-//     height: 600px;
-
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(47, 48, 58, 0.4),
-//         rgba(47, 48, 58, 0.4)
-//       ),
-//       url(../images/hero/big-circle@1x.jpg);
-
-//     @media (min-device-pixel-ratio: 2),
-//       (min-resolution: 192dpi),
-//       (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//           to right,
-//           rgba(47, 48, 58, 0.4),
-//           rgba(47, 48, 58, 0.4)
-//         ),
-//         url(../images/hero/big-circle@2x.jpg);
-//     }
-//   }
-// }
+.hero .swiper-slide {
+  object-fit: contain;
+}
