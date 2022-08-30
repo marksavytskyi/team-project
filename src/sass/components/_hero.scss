@@ -1,0 +1,111 @@
+.hero {
+  display: flex;
+  //   margin-bottom: -161px;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+}
+
+.hero__subtitle {
+  font-size: 14px;
+  line-height: 1.5;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.hero__btn {
+  background-color: $color-green-light;
+  width: 98px;
+  height: 32px;
+  border-radius: 30px;
+  border: none;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+// .swiper .swiper-slide {
+//   background-image: url(../images/hero/small-circle@1x.jpg);
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   max-width: 480px;
+//   height: 400px;
+//   margin: 0 auto;
+
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: linear-gradient(
+//         to right,
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url(../images/hero/small-circle@2x.jpg);
+//   }
+
+//   @media screen and (min-width: 768px) {
+//     background-image: linear-gradient(
+//         to right,
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url(../images/hero/small-circle@1x.jpg);
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: linear-gradient(
+//           to right,
+//           rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)
+//         ),
+//         url(../images/hero/small-circle@2x.jpg);
+//     }
+//     max-width: 768px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     max-width: 1600px;
+//     height: 600px;
+
+//     background-image: linear-gradient(
+//         to right,
+//         rgba(47, 48, 58, 0.4),
+//         rgba(47, 48, 58, 0.4)
+//       ),
+//       url(../images/hero/big-circle@1x.jpg);
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: linear-gradient(
+//           to right,
+//           rgba(47, 48, 58, 0.4),
+//           rgba(47, 48, 58, 0.4)
+//         ),
+//         url(../images/hero/big-circle@2x.jpg);
+//     }
+//   }
+// }

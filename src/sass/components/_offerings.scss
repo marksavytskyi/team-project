@@ -1,6 +1,109 @@
 .offering {
-  background-image: url(/src/images/offerings/Rectangle\ 694.svg);
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  background-image: url(/src/images/offerings/rect320@1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/offerings/rect640@1x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/offerings/rect768@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/offerings/rect1536@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(/src/images/offerings/rect1280@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/offerings/rect2560@2x.png);
+    }
+  }
+}
+
+.offering__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 49px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 42px;
+    line-height: 50px;
+  }
+}
+
+.offering__text {
+  font-size: 14px;
+  line-height: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.offering__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.offering__desc {
+  font-size: 14px;
+  line-height: 16px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.offering__btn {
+  background-color: #ffffff;
+  width: 106px;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid $color-green-dark;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  margin-right: 24px;
+}
+
+// .link__text {
+//   flex: none;
+//   order: 0;
+//   flex-grow: 0;
+// }
+
+.icon-arrow {
+  rotate: 180deg;
 }
