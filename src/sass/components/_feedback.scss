@@ -22,7 +22,7 @@
       background-image: url(../images/feedback/background@2x-1536-tabl.png);
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: url(../images/feedback/background@1x-1280-pc.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -35,6 +35,13 @@
   &__container {
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      padding-bottom: 120px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 100px;
+      padding-bottom: 200px;
+    }
   }
 
   &__boxtxt {
@@ -45,31 +52,51 @@
     font-size: 28px;
     line-height: calc(33 / 28);
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      font-size: 42px;
+      line-height: calc(49 / 42);
+    }
   }
   &__descr {
     font-size: 14px;
     line-height: calc(16 / 14);
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      line-height: calc(19 / 16);
+    }
   }
   &__list {
     display: flex;
     gap: 24px;
     flex-direction: column;
     align-items: flex-start;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      gap: 32px;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 139px;
+    }
   }
 
   &__item {
     flex-direction: column;
     max-width: 280px;
-    padding-left: 8px;
-    padding-right: 8px;
-
+    padding: 8px;
     border-radius: 0px 30px 30px 30px;
     background-color: $color-white;
+    @media screen and (min-width: 768px) {
+      max-width: 336px;
+      padding: 12px;
+    }
+    @media screen and (min-width: 1280px) {
+      max-width: 501px;
+      padding: 14px;
+    }
   }
 
   &__icon {
     display: flex;
-    margin-top: 8px;
     margin-bottom: 28px;
   }
   &__icon:not(:last-child) {
@@ -81,12 +108,15 @@
     font-size: 16px;
     line-height: calc(19 / 16);
     font-weight: 700;
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      line-height: calc(21 / 18);
+    }
   }
 
   &__customers {
     display: flex;
     align-items: center;
-    margin-bottom: 12px;
   }
 
   &__box {
