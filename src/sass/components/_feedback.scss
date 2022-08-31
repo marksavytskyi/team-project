@@ -78,7 +78,7 @@
       gap: 139px;
     }
   }
-
+  
   &__item {
     flex-direction: column;
     max-width: 280px;
@@ -120,9 +120,11 @@
   }
 
   &__box {
-    border-right: 0.854167px solid $color-green-dark;
-    padding-right: 14px;
     margin-left: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-right: 14px;
+    border-right: 0.854167px solid $color-green-dark;
   }
 
   &__customername {

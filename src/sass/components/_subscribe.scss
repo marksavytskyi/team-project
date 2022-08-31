@@ -10,7 +10,6 @@
     @media screen and (min-width: 1280px) {
       margin-top: -20px;
       padding-top: 0;
-      padding-bottom: 64px;
     }
   }
   &__background {
@@ -20,8 +19,13 @@
     @media screen and (max-width: 767px) {
       background-position: center;
       top: -43px;
-      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 280px;
       height: 78px;
+      display: block;
+
       background-image: url(../images/subscribe/banan@1x-280-mob.png);
       background-size: 280px 78px;
       @media (min-device-pixel-ratio: 2),
@@ -34,7 +38,7 @@
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
       top: -74px;
-      right: 0;
+      right: 16px;
       width: 281px;
       height: 136px;
       background-image: url(../images/subscribe/banan@1x-281-tabl.png);
@@ -68,7 +72,6 @@
     font-weight: 700;
     font-size: 28px;
     line-height: calc(34 / 28);
-    max-width: 280px;
     margin-bottom: 20px;
 
     @media screen and (min-width: 768px) {
