@@ -69,14 +69,20 @@
   background-position: top center;
 
   @media screen and (min-width: 768px) {
-    background-image: url(/src/images/offerings/apple-mob.png);
-    background-position: top left;
-    background-image: url(/src/images/offerings/Apple-midl.png);
-    background-position: top center;
-    background-image: url(/src/images/offerings/Apple-small.png);
-    background-position: top center;
+    background-image: url(/src/images/offerings/apple-mob.png),
+      url(/src/images/offerings/Apple-midl.png),
+      url(/src/images/offerings/Apple-small.png);
+    background-size: 257px, 166px, 108px;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: top 150px left 20px, top 266px left 418px,
+      top 340px left 628px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(/src/images/offerings/apple-big.png);
+    background-size: 550px;
+    background-repeat: no-repeat;
+    background-position: top 177px left 16px;
   }
 }
 
