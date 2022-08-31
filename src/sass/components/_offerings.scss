@@ -22,7 +22,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: url(/src/images/offerings/rect1280@1x.png);
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -30,6 +30,36 @@
       (min-resolution: 2dppx) {
       background-image: url(/src/images/offerings/rect2560@2x.png);
     }
+  }
+}
+
+.offering__description {
+  align-items: flex-start;
+  margin-bottom: 60px;
+  padding-top: 410px;
+
+  @media screen and (min-width: 768px) {
+    width: 526px;
+    margin-bottom: 60px;
+    padding-top: 496px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 526px;
+    margin-left: 656px;
+    padding-top: 113px;
+  }
+}
+
+.offering__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 116px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    // margin-left: 656px;
+    gap: 67px;
   }
 }
 
@@ -121,7 +151,7 @@
   height: 48px;
   background-color: #ffffff;
   border-radius: 50%;
-  background-image: url(/src/images/logo-sprite.svg#icon-rocket);
+  background-image: url(/src/images/offerings/rocket_launch_new.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 8px;
@@ -133,7 +163,7 @@
   height: 48px;
   background-color: #ffffff;
   border-radius: 50%;
-  background-image: url(/src/images/logo-sprite.svg#icon-rocket);
+  background-image: url(/src/images/offerings/touch_app_new.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 8px;
