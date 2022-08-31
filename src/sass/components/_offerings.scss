@@ -1,4 +1,5 @@
 .offering {
+  position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,19 +36,21 @@
 
 .offering__description {
   align-items: flex-start;
-  margin-bottom: 60px;
-  padding-top: 410px;
+
+  // margin-bottom: 60px;
+  // padding-top: 410px;
 
   @media screen and (min-width: 768px) {
     width: 526px;
-    margin-bottom: 60px;
-    padding-top: 496px;
+    // margin-bottom: 60px;
+    // padding-top: 496px;
   }
 
   @media screen and (min-width: 1280px) {
     width: 526px;
-    margin-left: 656px;
-    padding-top: 113px;
+
+    // margin-left: 656px;
+    // padding-top: 113px;
   }
 }
 
@@ -63,10 +66,46 @@
   }
 }
 
-.offering .apple {
+// .offering__container {
+//   background-image: url(/src/images/offerings/apple-mob.png);
+//   background-repeat: no-repeat;
+//   background-position: top center;
+//   margin-top: 70px;
+//   margin-bottom: 60px;
+
+//   @media screen and (min-width: 768px) {
+//     background-image: url(/src/images/offerings/apple-mob.png),
+//       url(/src/images/offerings/Apple-midl.png),
+//       url(/src/images/offerings/Apple-small.png);
+//     background-size: 257px, 166px, 108px;
+//     background-repeat: no-repeat;
+//     background-position: top 150px left 20px, top 190px left 350px,
+//       top 250px left 628px, center;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     background-image: url(/src/images/offerings/apple-big.png);
+//     background-size: 550px;
+//     background-repeat: no-repeat;
+//     background-position: bottom 43px left 16px;
+//   }
+// }
+.offering__container {
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 43px;
+    padding-top: 186px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.background-apple {
   background-image: url(/src/images/offerings/apple-mob.png);
   background-repeat: no-repeat;
   background-position: top center;
+  margin-top: 70px;
+  margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     background-image: url(/src/images/offerings/apple-mob.png),
@@ -74,68 +113,83 @@
       url(/src/images/offerings/Apple-small.png);
     background-size: 257px, 166px, 108px;
     background-repeat: no-repeat;
-    background-position: top 150px left 20px, top 190px left 350px,
-      top 250px left 628px, center;
+    background-position: 32px 117px, 330px 160px, 560px 220px, center;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(/src/images/offerings/apple-big.png);
-    background-size: 550px;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: bottom 43px left 16px;
+    background-position: center;
+    margin-right: 90px;
+  }
+
+  display: block;
+  width: 100%;
+  height: 309px;
+  margin-top: 41px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    width: 704px;
+    height: 404px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+    height: 604px;
   }
 }
 
 .offering__title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 33px;
+  line-height: 1.18;
 
   @media screen and (min-width: 768px) {
     font-size: 42px;
-    line-height: 49px;
+    line-height: 1.17;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 410px;
     font-size: 42px;
-    line-height: 50px;
+    line-height: 1.19;
   }
 }
 
 .offering__text {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
   }
 }
 
 .offering__subtitle {
   font-weight: 700;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1.17;
 
   @media screen and (min-width: 1280px) {
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.39;
   }
 }
 
 .offering__desc {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
 
   @media screen and (min-width: 1280px) {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 1.5;
   }
 }
 
@@ -172,17 +226,11 @@
 
   font-weight: 500;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 1.54;
   margin-right: 24px;
   margin-top: 28px;
   margin-bottom: 60px;
 }
-
-// .link__text {
-//   flex: none;
-//   order: 0;
-//   flex-grow: 0;
-// }
 
 .icon-arrow {
   rotate: 180deg;
