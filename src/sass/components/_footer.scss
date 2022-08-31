@@ -103,25 +103,30 @@
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
       margin-bottom: 0px;
+      align-items: center;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1280px) {
       display: flex;
       align-items: center;
+      margin-bottom: 80px;
     }
   }
   &__flexbox {
     display: flex;
+    margin-bottom: 40px;
     
     @media screen and (min-width: 768px) {
       display: flex;
         align-items: center;
-    margin-bottom: 40px;
+
     }
-   
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0;
+    }
   }
   &__nav {
     @media screen and (max-width: 767px) {
-      margin-bottom: 40px;
+      
       margin-left: 25.3%;
     }
     @media screen and (min-width: 768px) {
@@ -136,7 +141,7 @@
   &__list {
         @media screen and (max-width: 767px) {
       max-width: 49px;
-    margin-left: 53%;
+
     }
     @media screen and (min-width: 768px) {
       display: flex;
@@ -144,7 +149,6 @@
       gap: 28px;
     }
     @media screen and (min-width: 1280px) {
-      margin-left: 70%;
       justify-content: inherit;
       gap: 28px;
       margin-bottom: 0px;
@@ -167,7 +171,7 @@
   &__link {
     font-size: 14px;
     line-height: 1.14;
-    color: $color-black-secondary;
+    color: #2c2c2c;
   }
  
   &__copyright {
@@ -199,7 +203,7 @@
   @media screen and (min-width: 1280px) {
     margin-left: auto;
       width: auto;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
 
   &__title {
@@ -211,11 +215,15 @@
   }
 
   &__flexbox {
-    display: flex;
+    
     @media screen and (min-width: 768px) {
-
+      display: flex;
       align-items: center;
-      margin-bottom: 40px;
+      margin-bottom: 12px;
+    }
+    @media screen and (min-width: 1280px) {
+      align-items: start;
+      margin-bottom: 0;
     }
    
    }
@@ -226,12 +234,16 @@
     padding-left: 12px;
     font-size: 12px;
     line-height: 150%;
-    margin-bottom: 20px;
+    
     border: 0.854167px solid $color-yellow;
     border-radius: 30px;
     transition-property: fill, border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+    }
 
     &:focus,
     &:hover {
@@ -244,7 +256,7 @@
     }
     &:not(:placeholder-shown):invalid {
       border-color: $color-warning;
-      margin-bottom: 5px;
+      margin-bottom: 4px;
     }
     &:invalid:not(:placeholder-shown) + .subscription__error {
       display: flex;
@@ -300,6 +312,10 @@
       margin-left: 13px;
       margin-bottom: 0px;
     }
+    @media screen and (min-width:1280px) {
+      margin-bottom: 19px;
+    }
+
      }
   &__policy {
     font-size: 10px;
@@ -309,8 +325,13 @@
       line-height: 1.16;
       display: block;
        }
+      
     
   }
+  &__form {
+   
+  }
+
   &__link {
     text-decoration: underline;
     color: $color-green-dark;
@@ -325,6 +346,7 @@
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
+    gap: 20px;
   }
   }
 .policy__link {
