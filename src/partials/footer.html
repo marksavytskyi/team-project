@@ -1,13 +1,14 @@
 <footer class="footer">
   <div class="footer__container container">
     <div class="footer__menu">
-      <svg class="footer__logo" aria-label="Food sta" width="69" height="51">
-        <use
-          href="./images/logo-sprite.svg#futer_logo"
-          class="footer__icon"
-        ></use>
-      </svg>
       <div class="footer__flexbox">
+        <svg class="footer__logo" aria-label="Food sta" width="69" height="51">
+          <use
+            href="./images/logo-sprite.svg#futer_logo"
+            class="footer__icon"
+          ></use>
+        </svg>
+
         <nav class="footer__nav">
           <ul class="footer__list">
             <li class="footer__item">
@@ -27,44 +28,43 @@
             </li>
           </ul>
         </nav>
+      </div>
 
-        <div class="subscription">
-          <form class="subscription__form">
-            <label for="subscribe" class="subscription__title"
-              >Subscribe
-            </label>
-            <div class="subscription__flexbox">
-              <div class="subscription__field">
-                <input
-                  id="subscribe"
-                  type="email"
-                  name="email"
-                  class="subscription__input"
-                  placeholder="Enter your email"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
-                />
-                <div class="subscription__error">
-                  <svg
-                    aria-label="Food sta"
-                    width="12"
-                    height="12"
-                    class="subscription__icon"
-                  >
-                    <use href="./images/logo-sprite.svg#icon-warning"></use>
-                  </svg>
-                  <span> Not a valid email address (example@email.com)</span>
-                </div>
+      <div class="subscription">
+        <form class="subscription__form">
+          <label for="subscribe" class="subscription__title">Subscribe </label>
+          <div class="subscription__flexbox">
+            <div class="subscription__field">
+              <input
+                id="subscribe"
+                type="email"
+                name="email"
+                class="subscription__input"
+                placeholder="Enter your email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+              />
+              <div class="subscription__error">
+                <svg
+                  aria-label="Food sta"
+                  width="12"
+                  height="12"
+                  class="subscription__icon"
+                >
+                  <use href="./images/logo-sprite.svg#icon-warning"></use>
+                </svg>
+                <span> Not a valid email address (example@email.com)</span>
               </div>
-              <button type="submit" class="subscription__btn">Subscribe</button>
             </div>
-          </form>
-          <p class="subscription__policy">
-            By subscribing you agree to with our
-            <span class="subscription__link">Privacy Policy</span>
-          </p>
-        </div>
+            <button type="submit" class="subscription__btn">Subscribe</button>
+          </div>
+        </form>
+        <p class="subscription__policy">
+          By subscribing you agree to with our
+          <span class="subscription__link">Privacy Policy</span>
+        </p>
       </div>
     </div>
+
     <div class="footer__info">
       <ul class="policy__list">
         <li class="policy__item">
