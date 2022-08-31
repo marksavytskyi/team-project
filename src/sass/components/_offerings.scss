@@ -70,31 +70,17 @@
 
   @media screen and (min-width: 768px) {
     background-image: url(/src/images/offerings/apple-mob.png);
+    background-position: top left;
     background-image: url(/src/images/offerings/Apple-midl.png);
+    background-position: top center;
     background-image: url(/src/images/offerings/Apple-small.png);
+    background-position: top center;
     background-repeat: no-repeat;
     background-position: top center;
   }
-
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: 201px 255px 128px;
-  // background-image: url(/src/images/offerings/applemob@1x.png),
-  //   url(/src/images/offerings/apple-bg-mob@1x.png),
-  //   url(/src/images/offerings/apple-shad-mob@1x.png);
-
-  // @media (min-device-pixel-ratio: 2),
-  //   (-webkit-min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: url(/src/images/offerings/applemob@2x.png),
-  //     url(/src/images/offerings/apple-bg-mob@2x.png),
-  //     url(/src/images/offerings/apple-shad-mob@2x.png);
-  // }
 }
 
 .offering__title {
-  padding-top: 410px;
   font-weight: 700;
   font-size: 28px;
   line-height: 33px;
@@ -105,6 +91,7 @@
   }
 
   @media screen and (min-width: 1280px) {
+    padding-top: 410px;
     font-size: 42px;
     line-height: 50px;
   }
