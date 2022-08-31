@@ -1,6 +1,273 @@
 .offering {
-  background-image: url(/src/images/offerings/Rectangle\ 694.svg);
-  background-position: center bottom;
+  position: relative;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 41px;
+  padding-bottom: 60px;
+
+  background-image: url(/src/images/offerings/rect320@1x.png);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/offerings/rect640@1x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(/src/images/offerings/rect768@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/offerings/rect1536@2x.png);
+
+      
+    }
+    padding-top: 150px;
+    padding-bottom: 100px;
+    margin-top: -35px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(/src/images/offerings/rect1280@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/offerings/rect2560@2x.png);
+    }
+
+    padding-bottom: 43px;
+    margin-top: 0;
+    padding-top: 177px;
+  }
+}
+
+.offering__description {
+  align-items: flex-start;
+
+  // margin-bottom: 60px;
+  // padding-top: 410px;
+
+  @media screen and (min-width: 768px) {
+    width: 526px;
+    // margin-bottom: 60px;
+    // padding-top: 496px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 526px;
+
+    // margin-left: 656px;
+    // padding-top: 113px;
+  }
+}
+
+.offering__list {
+  margin-bottom: 28px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 116px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    // margin-left: 656px;
+    gap: 67px;
+    margin-bottom: 32px;
+  }
+}
+
+.offering__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+// .offering__container {
+//   background-image: url(/src/images/offerings/apple-mob.png);
+//   background-repeat: no-repeat;
+//   background-position: top center;
+//   margin-top: 70px;
+//   margin-bottom: 60px;
+
+//   @media screen and (min-width: 768px) {
+//     background-image: url(/src/images/offerings/apple-mob.png),
+//       url(/src/images/offerings/Apple-midl.png),
+//       url(/src/images/offerings/Apple-small.png);
+//     background-size: 257px, 166px, 108px;
+//     background-repeat: no-repeat;
+//     background-position: top 150px left 20px, top 190px left 350px,
+//       top 250px left 628px, center;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     background-image: url(/src/images/offerings/apple-big.png);
+//     background-size: 550px;
+//     background-repeat: no-repeat;
+//     background-position: bottom 43px left 16px;
+//   }
+// }
+.offering__container {
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    
+  }
+}
+
+.background-apple {
+  width: 280px;
+  height: 309px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+  
+  
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(/src/images/offerings/apple-mob.png);
+    margin-left: auto;
+      margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 394px;
+    background-image: url(/src/images/offerings/apple-tablet.png);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+    height: 604px;
+    margin-bottom: 0;
+    margin-right: 90px;
+    background-image: url(/src/images/offerings/apple-big.png);
+  }
+}
+
+
+.offering__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: 1.17;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 42px;
+    line-height: 1.19;
+  }
+}
+
+.offering__text {
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+.offering__subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.39;
+  }
+}
+
+.offering__desc {
+  font-size: 14px;
+  line-height: 1.14;
+  // margin-bottom: 28px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
+
+.icon-rocket {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-image: url(/src/images/offerings/rocket_launch_new.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
+}
+
+.icon-touch {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-image: url(/src/images/offerings/touch_app_new.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 8px;
+}
+
+.offering__btn {
+  background-color: #ffffff;
+  width: 106px;
+  height: 40px;
+  border-radius: 30px;
+  border: 2px solid $color-green-dark;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.54;
+  margin-right: 24px;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #597d00;
+    cursor: pointer;
+  }
+}
+
+.icon-arrow {
+  margin-left: 3.4px;
+  rotate: 180deg;
+}
+.link__text {
+  display: inline-flex;
+  align-items: center;
+  color: #000000;
+  font-size: 13.6667px;
+  line-height: 150%;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
