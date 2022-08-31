@@ -1,11 +1,11 @@
 .hero-container {
   padding-top: 60px;
   padding-bottom: 50px;
+  position: relative;
 
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    justify-content: space-around;
   }
 }
 
@@ -27,11 +27,13 @@
   font-size: 28px;
   line-height: 1.18;
   margin-bottom: 28px;
+  width: 280px;
 
   @media screen and (min-width: 768px) {
     font-size: 42px;
     line-height: 1.2;
     margin-bottom: 44px;
+    width: 537px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -58,7 +60,7 @@
 }
 
 .hero__btn {
-  background-color: $color-green-light;
+  background-color: #bbf330;
   width: 98px;
   height: 32px;
   border-radius: 30px;
@@ -68,13 +70,29 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 1.54;
+
+  &:hover,
+  &:focus {
+    background-color: #b5ff00;
+    cursor: pointer;
+  }
 }
 
 .hero__food {
-  // margin-left: auto;
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+  width: 320px;
+  height: 320px;
 
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 580px;
+    height: 580px;
+    bottom: -30%;
   }
 
   // @media screen and (min-width: 768px) {
