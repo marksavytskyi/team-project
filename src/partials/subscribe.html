@@ -1,28 +1,30 @@
 <section id="subscribe" class="subscribe">
   <div class="subscribe__container container">
-    <span class="subscribe__background"></span>
+      <span class="subscribe__background"></span>
     <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
     <p class="subscribe__descr">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
       varius enim in eros elementum tristique.
     </p>
     <form class="subscribe__form" name="subscribe__form">
-      <input
-        class="subscribe__input"
-        type="email"
-        name="subscribe"
-        placeholder="Enter your email"
-      />
-      <div class="subscribe__warning">
-        <svg class="subscribe__icon" width="16" height="15">
-          <use
-            class="subscribe__icon--not-check"
-            href="./images/logo-sprite.svg#icon-warning"
-          ></use>
-        </svg>
-        <span class="subscribe__warningtxt"
-          >Not a valid email address (example@email.com)</span
-        >
+      <div class="subscribe__tabletpcbox">
+        <input
+          class="subscribe__input"
+          type="email"
+          name="subscribe"
+          placeholder="Enter your email"
+        />
+        <div class="subscribe__warning">
+          <svg class="subscribe__icon" width="16" height="15">
+            <use
+              class="subscribe__icon--not-check"
+              href="./images/logo-sprite.svg#icon-warning"
+            ></use>
+          </svg>
+          <span class="subscribe__warningtxt"
+            >Not a valid email address (example@email.com)</span
+          >
+        </div>
       </div>
       <button class="subscribe__btn" type="submit">Subscribe</button>
     </form>
