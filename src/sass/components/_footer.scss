@@ -218,12 +218,12 @@
     
     @media screen and (min-width: 768px) {
       display: flex;
-      align-items: center;
-      margin-bottom: 12px;
+      align-items: baseline;
+  
     }
     @media screen and (min-width: 1280px) {
       align-items: start;
-      margin-bottom: 0;
+      
     }
    
    }
@@ -310,7 +310,7 @@
     }
     @media screen and (min-width: 768px) {
       margin-left: 13px;
-      margin-bottom: 0px;
+      margin-bottom: 19px;
     }
     @media screen and (min-width:1280px) {
       margin-bottom: 19px;
@@ -327,9 +327,6 @@
        }
       
     
-  }
-  &__form {
-   
   }
 
   &__link {
