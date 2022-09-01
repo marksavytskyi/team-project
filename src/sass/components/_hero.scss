@@ -78,7 +78,9 @@
     cursor: pointer;
   }
 }
-
+// .hero .swiper-box {
+//   position: relative;
+// }
 .hero .swiper {
   position: absolute;
   bottom: -71.5px;
@@ -109,16 +111,16 @@
 
 .hero .swiper-button-prev {
   --swiper-navigation-size: 20px;
-
   left: -8px;
   right: auto;
   width: calc(var(--swiper-navigation-size) / 20 * 12);
   color: $color-black-primary;
 
-  background: #ffffff;
+  background: #fefefe;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   width: 28px;
+  height: 34px;
 
   @media screen and (min-width: 1280px) {
     --swiper-navigation-size: 29px;
@@ -130,7 +132,8 @@
     background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
-    width: 34px;
+    width: 40px;
+    height: 48px;
   }
 }
 
@@ -142,10 +145,11 @@
   width: calc(var(--swiper-navigation-size) / 20 * 12);
   color: $color-black-primary;
 
-  background: #ffffff;
+  background: #fefefe;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
   width: 28px;
+  height: 34px;
 
   @media screen and (min-width: 1280px) {
     --swiper-navigation-size: 29px;
@@ -157,6 +161,7 @@
     background: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
     border-radius: 4px;
-    width: 34px;
+    width: 40px;
+    height: 48px;
   }
 }
