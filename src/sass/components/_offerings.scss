@@ -6,6 +6,7 @@
   background-size: 100% 100%;
   padding-top: 41px;
   padding-bottom: 60px;
+  z-index: 99;
 
   background-image: url(/src/images/offerings/rect320@1x.png);
   @media (min-device-pixel-ratio: 2),
@@ -22,8 +23,6 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(/src/images/offerings/rect1536@2x.png);
-
-      
     }
     padding-top: 150px;
     padding-bottom: 100px;
@@ -117,7 +116,6 @@
     flex-direction: row;
     display: flex;
     align-items: center;
-    
   }
 }
 
@@ -126,15 +124,13 @@
   height: 309px;
   background-repeat: no-repeat;
   background-size: 100%;
-  
-  
-  
+
   margin-bottom: 60px;
 
   @media screen and (max-width: 767px) {
     background-image: url(/src/images/offerings/apple-mob.png);
     margin-left: auto;
-      margin-right: auto;
+    margin-right: auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -151,7 +147,6 @@
     background-image: url(/src/images/offerings/apple-big.png);
   }
 }
-
 
 .offering__title {
   font-weight: 700;

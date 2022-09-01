@@ -9,18 +9,61 @@
             <button type="button" class="hero__btn">Order Now</button>
 
         </div>
-        <div class="hero__food">
-            <picture>
-                <source srcset="./images/hero/food-img-tab@1x.png 320w, ./images/hero/food-img-tab@2x.png"
-                    media=" (min-width: 768px)" type="image/png">
-                <source srcset="
-                                                            ./images/hero/food-img@1x.png 580w, 
-                                                            ./images/hero/food-img@2x.png 1160w"
-                    media=" (min-width: 1280px)" type="image/png">
-                <img src="./images/hero/food-img@1x.png" alt="">
-            </picture>
-        </div>
 
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <picture>
+
+                        <source srcset="
+                                                ./images/hero/a1tab@1x.png 292w,
+                                                ./images/hero/a1tab@2x.png 584w" media=" (max-width: 1279px)"
+                            sizes="(min-width:768px) 292px, 100vw" type="image/png">
+                        <source srcset="
+                                                ./images/hero/a1desc@1x.png 528w,
+                                                ./images/hero/a1desc@2x.png 1056w" media="(max-width: 1280px)"
+                            sizes="(min-width:1199px) 528px, 100vw" type="image/png">
+                        <img src="./images/hero/a1desc@1x.png" width="528" alt=" dish photo " />
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+
+                        <source srcset="
+                                                                    ./images/hero/a2tab@1x.png 292w,
+                                                                    ./images/hero/a2tab@2x.png 584w"
+                            media=" (max-width: 1279px)" sizes="(min-width:768px) 292px, 100vw" type="image/png">
+                        <source srcset="
+                                                                    ./images/hero/a2desc@1x.png 528w,
+                                                                    ./images/hero/a2desc@2x.png 1056w"
+                            media="(max-width: 1280px)" sizes="(min-width:1199px) 528px, 100vw" type="image/png">
+                        <img src="./images/hero/a2desc@1x.png" width="528" alt=" dish photo " />
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+
+                        <source srcset="
+                                                                    ./images/hero/a3tab@1x.png 292w,
+                                                                    ./images/hero/a3tab@2x.png 584w"
+                            media=" (max-width: 1279px)" sizes="(min-width:768px) 292px, 100vw" type="image/png">
+                        <source srcset="
+                                                                    ./images/hero/a3desc@1x.png 528w,
+                                                                    ./images/hero/a3desc@2x.png 1056w"
+                            media="(max-width: 1280px)" sizes="(min-width:1199px) 528px, 100vw" type="image/png">
+                        <img src="./images/hero/a3desc@1x.png" width="528" alt=" dish photo " />
+                    </picture>
+                </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
 
     </div>
     </div>
