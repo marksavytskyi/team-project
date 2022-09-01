@@ -206,7 +206,6 @@ a {
     border: none;
     cursor: pointer;
     border-radius: 30px;
-    padding: 6px 18px;
     display: inline-block;
   }
   .header__btn:hover, .header__btn:focus {
