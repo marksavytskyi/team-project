@@ -1,69 +1,149 @@
 <section class="hero">
-    <div class="hero-container container">
-        <div class="hero__info">
-            <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
-            <p class="hero__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-                in eros elementum
-                tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
-            <button type="button" class="hero__btn">Order Now</button>
-
-        </div>
-
-        <!-- Slider main container -->
-
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <picture>
-
-                        <source srcset="
-                                                ./images/hero/a1tab@1x.png 292w,
-                                                ./images/hero/a1tab@2x.png 584w" media=" (max-width: 1279px)"
-                            sizes="(min-width:768px) 292px, 100vw" type="image/png">
-                        <source srcset="
-                                                ./images/hero/a1desc@1x.png 528w,
-                                                ./images/hero/a1desc@2x.png 1056w" media="(max-width: 1280px)"
-                            sizes="(min-width:1199px) 528px, 100vw" type="image/png">
-                        <img src="./images/hero/a1desc@1x.png" width="528" alt=" dish photo " />
-                    </picture>
-                </div>
-                <div class="swiper-slide">
-                    <picture>
-
-                        <source srcset="
-                                                                    ./images/hero/a2tab@1x.png 292w,
-                                                                    ./images/hero/a2tab@2x.png 584w"
-                            media=" (max-width: 1279px)" sizes="(min-width:768px) 292px, 100vw" type="image/png">
-                        <source srcset="
-                                                                    ./images/hero/a2desc@1x.png 528w,
-                                                                    ./images/hero/a2desc@2x.png 1056w"
-                            media="(max-width: 1280px)" sizes="(min-width:1199px) 528px, 100vw" type="image/png">
-                        <img src="./images/hero/a2desc@1x.png" width="528" alt=" dish photo " />
-                    </picture>
-                </div>
-                <div class="swiper-slide">
-                    <picture>
-
-                        <source srcset="
-                                                                    ./images/hero/a3tab@1x.png 292w,
-                                                                    ./images/hero/a3tab@2x.png 584w"
-                            media=" (max-width: 1279px)" sizes="(min-width:768px) 292px, 100vw" type="image/png">
-                        <source srcset="
-                                                                    ./images/hero/a3desc@1x.png 528w,
-                                                                    ./images/hero/a3desc@2x.png 1056w"
-                            media="(max-width: 1280px)" sizes="(min-width:1199px) 528px, 100vw" type="image/png">
-                        <img src="./images/hero/a3desc@1x.png" width="528" alt=" dish photo " />
-                    </picture>
-                </div>
-            </div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
+  <div class="hero-container container">
+    <div class="hero__info">
+      <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+      </p>
+      <button type="button" class="hero__btn" data-modal-open>Order Now</button>
     </div>
+
+    <!-- Slider main container -->
+
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/hero/a1tab@1x.png 292w,
+                ./images/hero/a1tab@2x.png 584w
+              "
+              media=" (max-width: 1279px)"
+              sizes="(min-width:768px) 292px, 100vw"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/hero/a1desc@1x.png  528w,
+                ./images/hero/a1desc@2x.png 1056w
+              "
+              media="(max-width: 1280px)"
+              sizes="(min-width:1199px) 528px, 100vw"
+              type="image/png"
+            />
+            <img
+              src="./images/hero/a1desc@1x.png"
+              width="528"
+              alt=" dish photo "
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/hero/a2tab@1x.png 292w,
+                ./images/hero/a2tab@2x.png 584w
+              "
+              media=" (max-width: 1279px)"
+              sizes="(min-width:768px) 292px, 100vw"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/hero/a2desc@1x.png  528w,
+                ./images/hero/a2desc@2x.png 1056w
+              "
+              media="(max-width: 1280px)"
+              sizes="(min-width:1199px) 528px, 100vw"
+              type="image/png"
+            />
+            <img
+              src="./images/hero/a2desc@1x.png"
+              width="528"
+              alt=" dish photo "
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source
+              srcset="
+                ./images/hero/a3tab@1x.png 292w,
+                ./images/hero/a3tab@2x.png 584w
+              "
+              media=" (max-width: 1279px)"
+              sizes="(min-width:768px) 292px, 100vw"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/hero/a3desc@1x.png  528w,
+                ./images/hero/a3desc@2x.png 1056w
+              "
+              media="(max-width: 1280px)"
+              sizes="(min-width:1199px) 528px, 100vw"
+              type="image/png"
+            />
+            <img
+              src="./images/hero/a3desc@1x.png"
+              width="528"
+              alt=" dish photo "
+            />
+          </picture>
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
+  </div>
+
+  <!-- Modal form -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" class="modal__btn" data-modal-close="">
+        <svg class="modal__icon" width="24" height="24">
+          <use href="./images/logo-sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+      <form class="form">
+        <strong class="form__title">Order Form</strong>
+        <label class="form__wrap"
+          ><span class="form__label">Name</span> 
+          <input
+            class="form__input"
+            type="text"
+            name="user-name"
+            placeholder="Your name"
+            required
+        /></label>
+        <label class="form__wrap"
+          ><span class="form__label">Phone number</span>
+          <input
+            class="form__input"
+            type="tel"
+            name="user-tel"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            required
+        /></label>
+        <label class="form__wrap"
+          ><span class="form__label">E-mail</span>
+          <input
+            class="form__input"
+            type="email"
+            name="user-email"
+            placeholder="example@gmail.com"
+            required
+        /></label>
+        <button class="form__btn" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
 </section>
